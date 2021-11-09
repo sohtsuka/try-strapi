@@ -47,3 +47,23 @@ npm run develop
 ```
 
 http://localhost:1337 にアクセスし、初期ユーザー登録してログイン
+
+## Add Restaurant schema
+
+1. Content Type Builder メニューを選択
+2. `+ Create new collection type` を選択
+3. Display name に `Restaurant` を入力
+4. 以下のタイプ・名称のフィールドを追加
+  - Text タイプの `name`
+  - Rich Text タイプの `description`
+  - Media (Single media) タイプの `image`
+5. Continue ボタン、 Save ボタンで保存
+
+サーバーが再起動されるので、待ってから再ログイン
+
+## Allow public access
+
+1. Settings の中の Roles & Permissions メニューを選択
+2. Public ロールを選択
+3. Restaurant セクションの `find` と `findone` にチェックを入れる
+4. Save ボタンで保存
